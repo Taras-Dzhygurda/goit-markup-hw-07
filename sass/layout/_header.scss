@@ -4,7 +4,7 @@
     border-bottom: 1px solid #E5E5E5;
 }
 
-.page-header-container {
+.page-header__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -40,9 +40,8 @@
     }
 }
 
-.current {
+.menu__link--current {
     color: var(--accent-color);
-
     &::after {
         display: block;
         position: absolute;
@@ -67,8 +66,7 @@
     margin-right: 50px;
 }
 
-.menu-contact__mail-adress,
-.menu-contact__phone-number {
+.menu-contact__link {
     display: flex;
     align-items: center;
     @include font(500, 14px, 1.14, 0.02em);

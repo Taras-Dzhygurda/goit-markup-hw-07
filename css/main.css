@@ -78,33 +78,24 @@ body {
   margin-bottom: 50px;
 }
 
-.logo-header {
+.logo {
   font-family: var(--secondary-font-family);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--accent-color);
+}
+
+.logo__dark {
+  color: #000000;
   margin-right: 95px;
 }
 
-.logo-color-header {
-  color: #000000;
-}
-
-.logo-footer {
-  display: block;
-  font-family: var(--secondary-font-family);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: var(--accent-color);
-  margin-bottom: 20px;
-}
-
-.logo-color-footer {
+.logo__light {
+  display: inline-block;
   color: var(--secondary-color);
+  margin-bottom: 20px;
 }
 
 .social-list {
@@ -355,7 +346,7 @@ body {
   border-bottom: 1px solid #E5E5E5;
 }
 
-.page-header-container {
+.page-header__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -392,11 +383,11 @@ body {
   color: var(--accent-color);
 }
 
-.current {
+.menu__link--current {
   color: var(--accent-color);
 }
 
-.current::after {
+.menu__link--current::after {
   display: block;
   position: absolute;
   margin-top: 28px;
@@ -417,8 +408,7 @@ body {
   margin-right: 50px;
 }
 
-.menu-contact__mail-adress,
-.menu-contact__phone-number {
+.menu-contact__link {
   display: flex;
   align-items: center;
   font-weight: 500;
@@ -429,18 +419,10 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.menu-contact__mail-adress:hover .menu-contact__icon,
-.menu-contact__mail-adress:focus .menu-contact__icon, .menu-contact__mail-adress:hover, .menu-contact__mail-adress:focus,
-.menu-contact__mail-adress:hover .menu-contact__icon,
-.menu-contact__mail-adress:focus .menu-contact__icon, .menu-contact__mail-adress:hover, .menu-contact__mail-adress:focus,
-.menu-contact__phone-number:hover .menu-contact__icon,
-.menu-contact__phone-number:focus .menu-contact__icon,
-.menu-contact__phone-number:hover,
-.menu-contact__phone-number:focus,
-.menu-contact__phone-number:hover .menu-contact__icon,
-.menu-contact__phone-number:focus .menu-contact__icon,
-.menu-contact__phone-number:hover,
-.menu-contact__phone-number:focus {
+.menu-contact__link:hover .menu-contact__icon,
+.menu-contact__link:focus .menu-contact__icon, .menu-contact__link:hover, .menu-contact__link:focus,
+.menu-contact__link:hover .menu-contact__icon,
+.menu-contact__link:focus .menu-contact__icon, .menu-contact__link:hover, .menu-contact__link:focus {
   color: var(--accent-color);
   fill: var(--accent-color);
 }

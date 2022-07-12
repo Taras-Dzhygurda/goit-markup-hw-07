@@ -1,22 +1,16 @@
-.logo-header {
+.logo {
     font-family: var(--secondary-font-family);
     @include font(700, 26px, 1.19, 0.03em);
     color: var(--accent-color);
+}
+
+.logo__dark {
+    color: #000000;
     margin-right: 95px;
 }
 
-.logo-color-header {
-    color: #000000;
-}
-
-.logo-footer {
-    display: block;
-    font-family: var(--secondary-font-family);
-    @include font(700, 26px, 1.19, 0.03em);
-    color: var(--accent-color);
-    margin-bottom: 20px
-}
-
-.logo-color-footer {
+.logo__light {
+    display: inline-block;
     color: var(--secondary-color);
+    margin-bottom: 20px
 }
